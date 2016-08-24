@@ -1,0 +1,50 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x20586059, pid=4328, tid=5992
+#
+# JRE version: 6.0_25-b06
+# Java VM: Java HotSpot(TM) Client VM (20.0-b11 mixed mode windows-x86 )
+# Problematic frame:
+# C  0x20586059
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x2174a400):  JavaThread "Thread-7" [_thread_in_native, id=5992, stack(0x21a90000,0x21ae0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x20586059
+
+Registers:
+EAX=0x00000010, EBX=0x00000000, ECX=0x04997bd8, EDX=0x2174a528
+ESP=0x21adf6bc, EBP=0x21adf6e8, ESI=0x21adf6d8, EDI=0x2174a400
+EIP=0x20586059, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x21adf6bc)
+0x21adf6bc:   0237976b 2174a528 21adf6d8 00000010
+0x21adf6cc:   00000000 21adf6e8 21adf6e8 14791330
+0x21adf6dc:   00000000 04997bd8 04997bd8 21adf9cc
+0x21adf6ec:   0237bb5c 00000010 00000000 21adf708
+0x21adf6fc:   6d7f2bc0 2174a400 21adf734 6d7f2b66
+0x21adf70c:   2174a400 14786e78 2174a400 04997bd8
+0x21adf71c:   21adf710 2174a528 21adfa78 6d9f9ac0
+0x21adf72c:   6d9fc6e0 ffffffff 21adf744 21adf9cc 
+
+Instructions: (pc=0x20586059)
+0x20586039:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000005]
+
+Register to memory mapping:
+
+EAX=0x00000010 is an unknown value
+EBX=0x00000000 is an unknown value
+ECX=
+[error occurred during error reporting (printing register info), id 0xc0000005]
+
+Stack: [0x21a90000,0x21ae0000],  sp=0x21adf6bc,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
